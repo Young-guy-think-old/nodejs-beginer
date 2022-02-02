@@ -9,8 +9,7 @@ const handleFetchWeatherByAddress = (address) => {
       if (data.error) {
         return (message2.textContent = data.error);
       }
-      message2.textContent = `Location: ${data.location}`;
-      return (message2.textContent = `Forecast: ${data.forecast}`);
+      return (message2.textContent = `Location: ${data.location} ---- Forecast: ${data.forecast}`);
     });
   });
 };
