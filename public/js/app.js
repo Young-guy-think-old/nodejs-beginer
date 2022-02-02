@@ -3,7 +3,7 @@ console.log("Hello log");
 const handleFetchWeatherByAddress = (address) => {
   message1.textContent = "Loading...";
   message2.textContent = "";
-  fetch(`http://localhost:3000/weather?address=${address}`).then((response) => {
+  fetch(`/weather?address=${address}`).then((response) => {
     response?.json()?.then((data) => {
       message1.textContent = "";
       if (data.error) {
